@@ -27,6 +27,52 @@ header {
     animation: pulse 2s infinite;
 }
 
+aside {
+    grid-area: menu;
+    background: #444;
+    padding: 20px;
+}
+
+main {
+    grid-area: content;
+    padding: 20px;
+    animation: slideFade 1.2s ease;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 15px 0;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+}
+
+li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #00ffcc;
+}
+
+li:hover {
+    color: #00ffcc;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
