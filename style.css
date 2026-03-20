@@ -73,6 +73,27 @@ li:hover {
     transition: 0.3s;
 }
 
+#video {
+    display: none;
+}
+
+#video:target {
+    display: block;
+}
+
+img {
+    width: 300px;
+    cursor: pointer;
+}
+
+.fechar {
+    display: block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
